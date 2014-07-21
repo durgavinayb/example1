@@ -9,6 +9,7 @@ describe User do
 	it { should respond_to(:email) }
 	it { should respond_to(:password_digest) }
 	it { should respond_to(:password) }
+	it { should respond_to(:remember_token) }
 	it { should respond_to(:password_confirmation) }
 	it { should be_valid }
 	describe "when name is not present" do
@@ -60,5 +61,9 @@ describe User do
 	describe "when password confirmation is nil" do
 		before { @user.password_confirmation = nil }
 		it { should_not be_valid }
+	end
+	describe "remember token" do
+		before { @user.save }
+		its(:remember_token) { should_not be_blank }
 	end
 end
