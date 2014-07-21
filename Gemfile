@@ -16,7 +16,6 @@ group :development, :test do
   gem 'childprocess', '0.3.6'
   gem 'spork', '0.9.2'
 end
-
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
