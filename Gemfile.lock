@@ -1,3 +1,9 @@
+GIT
+  remote: git://github.com/EppO/rolify.git
+  revision: f2ad6cb43ee0656246d7012706dc64950dcec221
+  specs:
+    rolify (3.5.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -214,6 +220,7 @@ DEPENDENCIES
   jquery-rails (= 2.0.2)
   pg (= 0.12.2)
   rails (= 3.2.16)
+  rolify!
   rspec-rails (= 2.11.0)
   sass-rails (= 3.2.5)
   spork (= 0.9.2)

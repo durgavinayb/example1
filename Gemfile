@@ -16,7 +16,6 @@ group :development, :test do
   gem 'childprocess', '0.3.6'
   gem 'spork', '0.9.2'
 end
-
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -37,4 +36,5 @@ end
 
 group :production do
   gem 'pg', '0.12.2'
+  gem 'rolify', :git => 'git://github.com/EppO/rolify.git'
 end
